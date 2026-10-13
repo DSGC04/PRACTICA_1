@@ -9,6 +9,7 @@ public class Consulta {
 	private String diagnostico;
 	private String receta;
 	private Paciente paciente;
+	
 	public Consulta(LocalDate fechaDeConsulta, String diagnostico, String receta, Paciente paciente) {
 		super();
 		this.fechaDeConsulta = fechaDeConsulta;
