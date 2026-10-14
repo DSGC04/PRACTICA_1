@@ -25,7 +25,8 @@ public class Expediente {
 
 	public void agregraConsulta(Consulta consulta) {
 		if(indice<MAX_CONSULTA-1) {
-			consultas[++indice]=consulta;
+       indice++;
+			consultas[indice]=consulta;
 		}
 	}
 
@@ -34,7 +35,7 @@ public class Expediente {
 	}
 	
 	public Consulta getConsulta(int posicion) {
-		if(posicion<indice)
+		if(posicion<=indice)
 			return consultas[posicion];
 		return null;
 	}
